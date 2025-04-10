@@ -18,10 +18,11 @@ When('Escribo el nombre del articulo', () => {
 
 When('Selecciono el articulo presentado', () => {
     I.click('//span[@class="cdx-search-result-title"]')
-    I.wait(5)
+    I.wait(3)
 })
 
 Then('Veo el ultimo tema del articulo', () => {
+    I.scrollTo('[id="Pruebas_de_Interfaz_de_Usuario"]')
     I.wait(3)
     I.seeElement('[id="Pruebas_de_Interfaz_de_Usuario"]')
 })
