@@ -7,13 +7,13 @@ Given('Estoy en la pagina principal', () => {
 })
 
 When('Selecciono barra de busqueda', () => {
-    I.waitForElement('//input[@aria-label="Buscar en Wikipedia"]', 5)
+    I.waitForElement('//input[@aria-label="Buscar en Wikipedia"]', 3)
     I.click('//input[@aria-label="Buscar en Wikipedia"]')
 })
 
 When('Escribo el nombre del articulo', () => {
     I.fillField('//input[@aria-label="Buscar en Wikipedia"]', "automatizacion de pruebas")
-    I.wait(5)
+    I.wait(3)
 })
 
 When('Selecciono el articulo presentado', () => {
